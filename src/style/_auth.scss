@@ -1,0 +1,98 @@
+.auth-container {
+    min-height: 95vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+
+    .card-container {
+        border: 2px solid rgba(108, 115, 120, 0.24);
+        padding: 60px;
+        border-radius: 65px;
+        width: 480px;
+
+        nav {
+            h3 {
+                display: inline-block;
+                margin-right: 20px;
+                font-weight: 500;
+                font-size: 25px;
+                cursor: pointer;
+            }
+
+            h3.active:after {
+                content: "";
+                background-color: #1a3b58;
+                width: 20px;
+                height: 3px;
+                display: block;
+                border-radius: 3px;
+                margin-top: 2px;
+            }
+        }
+
+        .form-container {
+            width: 300px;
+            margin: 40px auto 0;
+
+            hr{
+                height: 2px;
+                background-color: #e9f4ff;
+                border: none;
+            }
+
+            h3{
+                font-size: 21px;
+                font-weight: 500;
+                margin-top: 38px;
+            }
+
+            input{
+                padding: 12px 15px;
+                font-size: 15px;
+                border: 1px solid #CBDBEA;
+                margin-top: 30px;
+                border-radius: 8px;
+                width: 100%;
+            }
+
+            .password_container{
+                position: relative;
+
+                i{
+                    position: absolute;
+                    top: 38px;
+                    right: 8px;
+                    padding: 7px;
+                    font-size: 20px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+            }
+
+            input[type="submit"]{
+                background-color: #329C89;
+                color: white;
+                font-weight: 600;
+                font-size: 17px;
+                margin-top: 20px;
+            }
+
+            input[type="checkbox"]{
+                width: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1220px) {
+    .auth-container{
+        grid-template-columns: repeat(1, 1fr);
+        img{
+            display: none;
+        }
+
+        .card-container{
+            margin: 0 auto;
+        }
+    }
+}

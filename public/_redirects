@@ -1,0 +1,2 @@
+http://taskez.netlify.com/* https://taskez.netlify.com/:splat 301!
+/* /index.html 200

@@ -1,0 +1,57 @@
+.card-content-container {
+    background-color: white;
+    width: 532px;
+    height: 100vh;
+    top: 0;
+    position: fixed;
+    padding: 20px 20px 20px 40px;
+    box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.12);
+    transition: 0.6s ease;
+
+    .icons{
+        text-align: right;
+        
+        i{
+            padding: 10px;
+            margin: 0 5px;
+            background-color: rgb(235, 235, 235);
+            border-radius: 5px;
+        }
+    }
+
+    h1 {
+        font-size: 20px;
+        font-weight: 500;
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    h1:after {
+        content: "";
+        background-color: green;
+        height: 3px;
+        width: 40px;
+        display: block;
+        margin-top: 10px;
+    }
+
+    .card-content{
+        font-size: 15px;
+        color: gray;
+
+        .detail{
+            display: flex;
+            margin: 40px 0;
+
+            .content{
+                margin-left: 20px;
+                display: flex;
+
+                img{
+                    width: 30px;
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+}
